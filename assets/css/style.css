@@ -1,0 +1,470 @@
+/* Main body */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+script{
+    display: none;
+}
+
+/* Headings */
+h1{
+text-transform: uppercase;
+font-weight: bolder;
+font-size: 1.3em;
+}
+h2{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+h3{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #242325;
+    color: white;
+    text-align: center;
+    min-height: 12rem;
+    z-index: 24000;
+  }
+
+header h1{
+margin-bottom :2rem;
+}
+
+/* Navigation Bar */
+  /* #navbar a{
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+  }
+
+  #navbar a:hover {
+  background-color: #008CBA;
+} */
+
+blockquote {
+width: 40%;
+border-left: 5px solid white;
+font-size: larger;
+margin: auto;
+}
+
+main{
+    margin-top: 14.5rem;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+}
+
+#footer container{
+    position: fixed;
+    background-color: #242325;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#footer-logo{
+    display: inline-block;
+    width: 20%;
+    background-color: #242325;
+  }
+
+  #footer-logo img {
+    width: 55%;
+    padding: 22%;
+}
+
+#footer_social_links {
+  display: inline-block;
+  min-height: 10rem;
+  vertical-align: middle;
+  width: 40%;
+  background-color: #242325;
+  color: white;
+  text-align: center;
+  padding: 2% 0 0 13%;
+}
+
+  #footer_menu {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+    min-height: 10rem;
+    background-color: #242325;
+    color: white;
+    text-align: center;
+    padding: 5px 0 0;
+    padding-inline-start: 0;
+  }
+  #footer_menu ul {
+    padding-inline-start: 0;
+    margin: 10% auto;
+    vertical-align: middle;
+}
+
+
+  #footer_menu a{
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  #footer_menu a:hover{
+    color: #037171;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  #footer_menu li {
+    list-style-type: none;
+    margin: 10px auto;
+}
+
+#footer_menu li:hover {
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+  #footer_contact {
+    display: inline-block;
+    min-height: 10rem;
+    vertical-align: middle;
+    width: 33.333%;
+    background-color: #242325;
+    color: white;
+    text-align: center;
+    padding: 5px 0 0;
+  }
+
+  #footer_social_links h3 {
+    margin-top: 0;
+}
+
+  #footer_social_links a {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    line-height: 3rem;
+}
+
+#footer_links h3 {
+    margin: 5px 0 5px 0;
+}
+
+#footer_links p {
+    margin: 0px auto;
+}
+
+#footer_social_links a:hover {
+    background-color: #DCDCDC;
+    color: white;
+    text-decoration: underline;
+}
+
+#footer_contact a {
+  color: #037171;
+}
+
+#footer_contact a:hover {
+  color: #f89f07;
+}
+
+#footer-credits{
+    margin: 1rem auto;
+}
+/* Home Page components */
+
+section#intro-intro {
+  background: #037171;
+  width: 80%;
+  margin: 0 auto 2rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 22px;
+  height: 25%;
+}
+
+section#intro-intro .containter{
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  justify-content: space-between; /* Ensures space between image and text */
+  width: 80%; /* Adjust the size as needed */
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.image-container img{
+  max-width: 150px; /* Adjust image size */
+  height: auto; /* Keeps the aspect ratio */
+  border-radius: 10px;
+}
+
+.text-container {
+  display: flex;
+  align-items: center; /* Centers text vertically */
+  justify-content: center; /* Centers text horizontally */
+  text-align: center; /* Ensures text stays centered */
+  width: 100%; /* Fills the remaining space */
+}
+
+div#intro-intro {
+  background-color: #037171;
+  margin: 2rem auto;
+  width: 70%;
+  display: inline-flex;
+  border-radius: 10px;
+  font-size: x-large;
+}
+
+#intro-image{
+    background-image: linear-gradient(to top right, rgba(3,113,113,0), rgba(3,113,113,1));
+    border-radius: 10px;
+    max-width: 750px;
+    margin: 0 auto 25px;
+    position: relative;
+    display: inline-block;
+}
+
+#intro-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: opacity(0.65);
+  }
+
+#intro-image-text-overlay{
+    position: absolute;
+    top: 15%;
+    background-color: transparent; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 22px; 
+    text-align: center;
+}
+
+#intro-image-text-overlay p{
+    max-width: 75%;
+    margin: auto;
+}
+
+.grid-container{
+  display: inline-grid;
+  gap: 1rem;
+  max-width: 50%;
+  justify-content: space-evenly;
+  grid-template-columns: 300px 300px;
+  margin: 1rem auto;
+}
+
+.grid-item {
+  background-color: #037171;
+  border-radius: 20px;
+}
+
+.grid-item:hover {
+  background-color: #DAA520;
+  border: 1px solid #fff;
+
+}
+
+progress#full {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: green;
+  inline-size: 10em;
+  border-radius: 20px;
+  block-size: 1em;
+  overflow: hidden;
+  height: 0.65em;
+  margin: 5px auto;
+}
+
+progress#full::-webkit-progress-value {
+  background: #00FF00;
+}
+
+progress#full::-webkit-progress-bar {
+  background-color: #3b3b3b;
+  border: 2px solid #858585;
+}
+
+progress#starting {
+  -webkit-appearance: none;
+  appearance: none;
+  inline-size: 10em;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 0.65em;
+  margin: 5px auto;
+  overflow: hidden;
+}
+
+progress#starting::-webkit-progress-value {
+  background: #0000CD;
+}
+
+progress#starting::-webkit-progress-bar {
+  background-color: #3b3b3b;
+  border: 2px solid #858585;
+}
+
+progress#minority {
+  -webkit-appearance: none;
+  appearance: none;
+  inline-size: 10em;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 0.65em;
+  margin: 5px auto;
+  overflow: hidden;
+}
+
+progress#minority::-webkit-progress-bar {
+  background-color: #3b3b3b;
+  border: 2px solid #858585;
+}
+
+progress#minority::-webkit-progress-value {
+  background: #0E7F3E;
+}
+
+progress#majority {
+  -webkit-appearance: none;
+  appearance: none;
+  inline-size: 10em;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 0.65em;
+  margin: 5px auto;
+  overflow: hidden;
+}
+
+progress#majority::-webkit-progress-bar {
+  background-color: #3b3b3b;
+  border: 2px solid #858585;
+}
+
+progress#majority::-webkit-progress-value {
+  background: #06CC19;
+}
+
+
+/* Buttons */
+
+.menu-btn {
+    border: none;
+    font-size: inherit;
+    color: white !important;
+    background-color: #037171;
+    cursor: pointer;
+    padding: 20px 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  .menu-btn a {
+    vertical-align: middle;
+    color: white !important;
+    text-decoration: none !important;
+  } 
+
+img.menu-icon {
+    padding: 0 10px;
+    vertical-align: middle;
+    filter: invert(1);
+}
+
+@keyframes color-change{
+    0% {background-color: black;}
+    33% {background-color: #b08d57;}
+    66% {background-color: #98a8b5}
+    99% {background-color: #dfc76c;}
+}
+
+.menu-btn:hover {
+    animation-name: color-change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+#navbar{
+    margin-bottom: 0.5rem;
+}
+/* Contact Form */
+
+#contact-form{
+    text-align: left;
+    text-transform: uppercase;
+    display: inline-grid;
+    width: 38rem;
+    margin-bottom: 2rem;
+}
+
+#contact-form ul li{
+    list-style-type: none;
+}
+
+#contact-form label{
+    margin: 10px 0;
+}
+
+#contact-form h3{
+        text-transform: initial;
+        font-weight: 300;
+        font-style: italic;
+}
+
+#contact-form button{
+  color: white !important;
+  cursor: pointer;
+  padding: 15px 50px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  border-radius: 2px;
+  margin-top: 8px;
+}
