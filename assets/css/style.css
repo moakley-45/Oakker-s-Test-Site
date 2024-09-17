@@ -412,7 +412,6 @@ progress#majority::-webkit-progress-value {
 img.menu-icon {
     padding: 0 10px;
     vertical-align: middle;
-    filter: invert(1);
 }
 
 @keyframes color-change{
