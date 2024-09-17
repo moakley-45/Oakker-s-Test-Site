@@ -300,7 +300,15 @@ div#intro-intro {
 .grid-item:hover {
   background-color: #DAA520;
   border: 1px solid #fff;
+}
 
+.grid-item img{
+  height: 7rem;
+  margin-top: 1rem;
+}
+
+.grid-item h4 {
+  margin-bottom: 0;
 }
 
 progress#full {
