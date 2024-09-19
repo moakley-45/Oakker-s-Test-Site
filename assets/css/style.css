@@ -122,11 +122,6 @@ footer {
 #footer_social_links ul {
   list-style-type: none;
   display: flex;
-}
-
-#footer_social_links ul {
-  list-style-type: none;
-  display: flex;
   justify-content: space-evenly;
   padding: 0;
   margin-top: 2rem;
@@ -146,8 +141,6 @@ footer {
   background: currentColor;
   mask-size: cover;
   -webkit-mask-size: cover;
-  width: 1.5em;
-  height: 1.5em;
   margin: 0 auto -20%;
 }
 
@@ -206,10 +199,6 @@ i::before {
     text-align: center;
     padding: 5px 0 0;
   }
-
-  #footer_social_links h3 {
-    margin-top: 0;
-}
 
 #footer_links h3 {
     margin: 5px 0 5px 0;
