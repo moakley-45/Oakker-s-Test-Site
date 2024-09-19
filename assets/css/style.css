@@ -12,6 +12,11 @@ img, svg {
   width: 100% !important;
 }
 
+img.gallery-element {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 script{
     display: none;
 }
