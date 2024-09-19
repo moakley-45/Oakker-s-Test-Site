@@ -106,8 +106,8 @@ footer {
   }
 
   #footer-logo img {
-    width: 55%;
-    padding: 22%;
+    width: 10rem;
+    padding: 15%;
     filter: invert();
 }
 
