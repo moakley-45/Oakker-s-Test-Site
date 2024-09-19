@@ -8,10 +8,6 @@ body {
     text-align: center;
 }
 
-img, svg {
-  width: 100% !important;
-}
-
 img.gallery-element {
   width: 100% !important;
   height: 100% !important;
