@@ -133,6 +133,7 @@ footer {
   background-color: #037171;
   color: #fff;
   text-decoration: none;
+  z-index: 4;
 }
 
 *[class^='iconoir-']::before, *[class*=' iconoir-']::before {
@@ -234,6 +235,18 @@ div#footer_social_links li {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+div#footer_social_links li:after {
+  height: 2px;
+  width: 30%;
+  position: absolute;
+  display: block;
+  background-color: #037171;
+  content: '';
+  overflow: hidden;
+  left: 26%;
+  bottom: -64%;
+  z-index: 1;
+}
 
 #footer_contact a {
   color: #037171;
