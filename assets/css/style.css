@@ -244,7 +244,7 @@ div#footer_social_links li:after {
   content: '';
   overflow: hidden;
   left: 26%;
-  bottom: -64%;
+  bottom: -121%;
   z-index: 1;
 }
 
