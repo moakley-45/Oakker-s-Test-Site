@@ -1,18 +1,17 @@
-<html></html>
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="A test site, created by Mars Oakley. A rudimentary frame for CSS and HTMl practise.">
 <meta name="keywords" content="HTML, CSS, JavaScript, Mars Oakley, testing, test site">
 <meta name="author" content="Mars Oakley">
 <title>MO Test Site | Profile</title>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
-/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"/>
 <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
+<body>
 
 <header>
     <h1>Oakker's Test Space - Myth Hunters</h1>
@@ -24,52 +23,139 @@
         <a href="media.html"><button class="menu-btn"><img src="https://cdn-icons-png.flaticon.com/512/16909/16909507.png" class="menu-icon" height="25px" width="25px">Media</button></a>
 </div>
 </header>
+
 <main>
 
-    <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <img src="assets/images/IMG_2888.jpg">
-          </div>
-          <div class="col-6">
-           <h1>Mars Oakley</h1>
-           <h3>Junior Full Stack Developer</h3>
-          </div>
-          </div>
+<div id="profile-container">
+<div id="profile-container-half" class="profile-selfie">
+    <img src="assets/images/IMG_2888.jpg" alt="A cheeky selfie of Mars, the site's owner" title="A cheeky selfie of Mars, the site's owner">
+</div>
+<div id="profile-container-half" class="profile-details">
+    <h2>Mars Oakley</h2>
+    <p>Junior Full Stack Developer</p>
+    <p><em>Former QA Test Engineer and Technical Support Team Lead</em></p>
+    <table>
+        <tr>
+            <th>Address:</th>
+            <td>93A George St<br>Croydon<br>Surrey<br>CR0 1LD</td>
+        </tr>
+        <tr>
+            <th>Phone:</th>
+            <td>020 7932 5400</td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td><a href="mailto:info@codeinstitute.net">info@codeinstitute.net</a></td>
+        </tr>
+        <tr>
+            <th>Github Handle</th>
+            <td><a href="https://github.com/moakley-45"><h3>moakley-45</h3></a></td>
+        </tr>
+          </table>
+
+</div>
+<div id="profile-container-half">
+<!-- Put the Timeline here -->
+<h3>Employment History</h3>
+
+<div class="timeline">
+    <div class="tl-container right">
+        <div class="content">
+          <h2>Sep 2024 - Current</h2>
+          <p>Full Stack Software Developer: Skills Bootcamp - <em>Code Institue</em></p>
+          <p>Reinforcing and learning Front and Back End coding and developer skills.</p>
         </div>
-        <div class="row">
-            <div class="col">
-              <table>
-            <tr>
-                <th>Name:</th>
-                <td>Mars Oakley</td>
-            </tr>
-            <tr>
-                <th>Address:</th>
-                <td>93A George St<br>Croydon<br>Surrey<br>CR0 1LD</td>
-            </tr>
-            <tr>
-                <th>Phone:</th>
-                <td>020 7932 5400</td>
-            </tr>
-            <tr>
-                <th>Email:</th>
-                <td><a href="mailto:info@codeinstitute.net">info@codeinstitute.net</a></td>
-            </tr>
-              </table>
-            </div>
-            <div class="col-6">
-             <h2>About me</h2>
-             <h3>Junior Full Stack Developer</h3>
-            </div>
-          </div>
+</div>
+    <div class="tl-container left">
+      <div class="content">
+        <h2>Apr 2023 - Jan 2024</h2>
+        <p>QA Test Engineer - <em>We Are Eight LTD</em></p>
+        <p>Solo tester - working in Agile Sprints, offering white-box & black-box testing.</p>
       </div>
+    </div>
+    <div class="tl-container right">
+      <div class="content">
+        <h2>Dec 2018 - Apr 2024</h2>
+        <p>Support Team Lead - <em>We Are Eight LTD</em></p>
+        <p>leading a team of Support Agents, offering support in SaaS eCommerce Products.</p>
+      </div>
+    </div>
+    <div class="tl-container left">
+        <div class="content">
+          <h2>Jul 2016 - Nov 2018</h2>
+          <p>Genius Bar - Genius Admin / Technical Specialist - <em>Apple Retail</em></p>
+          <p>Working with the public, offering repair and triage support for Apple ecosystem products.</p>
+        </div>
+      </div>
+  </div>
 
 
 
+</div>
+<div id="profile-container-half" class="skill-bar-div">
+<h3>My Skills</h3>
+
+<div id="skills-progressbars">
+    <div id="skill-progbar">
+    <label for="front_end">Front End Skills:</label>
+    <br>
+    <progress id="front_end" value="7" max="10"></progress>
+</div>
+<div id="skill-progbar">
+    <label for="back_end">Back End Skills:</label>
+    <br>
+    <progress id="back_end" value="5" max="10"></progress>
+</div>
+<div id="skill-progbar">
+    <label for="team_leadership">Team Leadership Skills:</label>
+    <br>
+    <progress id="team_leadership" value="10" max="10"></progress>
+</div>
+<div id="skill-progbar">
+    <label for="technical_writing">Technical Writing Skills:</label>
+    <br>
+    <progress id="technical_writing" value="8" max="10"></progress>
+</div>
+<div id="skill-progbar">
+    <label for="software_documentation">Software Documentation Skills:</label>
+    <br>
+    <progress id="software_documentation" value="8" max="10"></progress>
+</div>
+<div id="skill-progbar">
+    <label for="query_resolution">Query Resolution Skills:</label>
+    <br>
+    <progress id="query_resolution" value="10" max="10"></progress>
+</div>
+<div id="skill-progbar">
+    <label for="customer_service">Customer Service Skills:</label>
+    <br>
+    <progress id="customer_service" value="10" max="10"></progress>
+</div>
+<div id="skill-progbar">
+    <label for="it_hardware_support">IT Hardware Support Skills:</label>
+    <br>
+    <progress id="it_hardware_support" value="8" max="10"></progress>
+</div>
+<div id="skill-progbar">
+    <label for="triage_skills">Triage Skills:</label>
+    <br>
+    <progress id="triage_skills" value="10" max="10"></progress>
+</div>
+<div id="skill-progbar">
+    <label for="analytical_skills">Analytical Skills:</label>
+    <br>
+    <progress id="analytical_skills" value="9" max="10"></progress>
+</div>
+</div>
+
+</div>
+
+</div>
 
 
 </main>
+
+
 <footer>
     <container id="flex-container">
 
@@ -103,6 +189,7 @@
     <p>© Copyright 2024 Oakkers LTD.</p>
     </div>
 </footer>
-    <script src="script.js"></script>
-    </body>
-    </html>
+
+
+<script src="script.js"></script>
+</body>

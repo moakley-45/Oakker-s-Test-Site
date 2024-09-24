@@ -22,7 +22,7 @@ h1 {
 h2{
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 1.1em;
+    font-size: 2em;
 }
 h3{
     text-transform: uppercase;
@@ -432,7 +432,6 @@ progress#majority::-webkit-progress-value {
 /* Buttons */
 
 .menu-btn {
-  border: 3px groove #000000;
   font-size: inherit;
   color: #ffffff;
   background-color: #037171;
@@ -528,3 +527,181 @@ fieldset {
 }
 
 /* Profile */
+
+#profile-container {
+  display: inline-flex;
+  flex-direction: row;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+#profile-container-half img {
+  width: 100%;
+  border-radius: 8px 0 0 8px;
+}
+
+.profile-details {
+  background-color: #037171;
+  border-radius: 0 8px 8px 0;
+  padding: 5%;
+}
+
+.profile-details table {
+  text-align: end;
+  margin: auto;
+  width: 100%;
+}
+
+.profile-details td {
+  text-align: center;
+}
+
+.profile-details th {
+  text-align: center;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.profile-details h3 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin: 0;
+  text-decoration: none;
+}
+
+.profile-details a {
+  text-decoration: none;
+}
+
+#profile-container-half {
+  width: 45%;
+  display: inline-block;
+  flex-direction: column;
+}
+
+/* Profile - Timeline */
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #037171;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.tl-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.tl-container.left {
+  padding: 10px 0;
+}
+
+.tl-container.right {
+  padding: 10px 0;
+}
+
+.tl-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #DAA520;
+  border: 2px solid #037171;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 20px;
+  width: 0;
+  z-index: 1;
+  right: 15px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 20px;
+  width: 0;
+  z-index: 1;
+  left: 18px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -12px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: #121212;
+  position: relative;
+  border-radius: 6px;
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+/* Profile - Skill bars */
+
+#skills-progressbars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#skill-progbar {
+  margin: 1.5rem;
+}
+
+#skill-progbar progress {
+  appearance: none;
+  margin-top: .75rem;
+}
+
+#skills-progressbars progress::-webkit-progress-bar {
+  background-color: #3b3b3b;
+  border: 2px solid #858585;
+  height: 0.75rem;
+  border-radius: 8px;
+}
+
+
+#skills-progressbars progress::-webkit-progress-value {
+  background: #037171;
+}
