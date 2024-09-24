@@ -571,8 +571,36 @@ fieldset {
   text-decoration: none;
 }
 
+.profile-details h2 {
+  margin-top: 0;
+}
+
 .profile-details a {
   text-decoration: none;
+}
+
+button.download-btn {
+  background: #daa520;
+  border-radius: 8px;
+  margin-top: 1rem;
+  color: #ffffff;
+  padding: 5px;
+}
+
+button.download-btn a {
+  color: #ffffff;
+}
+
+button.download-btn:hover {
+  background:#C0C0C0;
+  color: #ffffff;
+transition: 2s;
+}
+
+button.download-btn img {
+  height: 2rem;
+  width: 2rem !important;
+  aspect-ratio: 1 !important;
 }
 
 #profile-container-half {
