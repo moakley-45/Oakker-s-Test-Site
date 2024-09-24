@@ -6,13 +6,9 @@
 <meta name="keywords" content="HTML, CSS, JavaScript, Mars Oakley, testing, test site">
 <meta name="author" content="Mars Oakley">
 <title>MO Test Site | Home</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
-      />
-        <link rel="stylesheet" href="assets/css/style.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"/>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <link rel="stylesheet" href="assets/css/style.css">
 <style>
 img.gallery-element {
     width: 100%;
@@ -26,16 +22,15 @@ div#image-gallery span {
     border: none;
     border-radius: 10px;
 }
-
 img.menu-icon {
-    width: 25px !important;
-    height: 25px;
-    margin: 0 10px;
-    padding: 0;
-}
-#footer-logo img {
+    padding: 0 5px;
+    vertical-align: middle;
+    filter: invert(1);
     box-sizing: content-box;
-    padding: 5%;
+}
+
+h1 {
+    margin: 0.67em auto;
 }
 div#image-gallery {
     margin: 12rem auto 4rem;
@@ -44,7 +39,7 @@ div#image-gallery {
 </head>
 <body>
     <header>
-        <h1>Oakker's Test Space - Myth Hunters</h1>
+        <h1 class="bootstrap-override">Oakker's Test Space - Myth Hunters</h1>
             <div  id="navbar">
             <a href="index.html"><button class="menu-btn"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" class="menu-icon" height="25px" width="25px">Home</button></a>
             <a href="news.html"><button class="menu-btn"><img src="https://cdn-icons-png.flaticon.com/512/1549/1549668.png" class="menu-icon" height="25px" width="25px">News</button></a>
@@ -57,38 +52,38 @@ div#image-gallery {
 <main>
 
     <div class="container" id="image-gallery">
-        <h1>Gallery</h1>
+        <h2>Gallery</h2>
 <br>
 <span>Below is an image of a collection of images, representing the aesthetics and visual language of bar culture</span>
         <div class="row">
-            <div class="col-12 col-xl-6 g-2"><img class="gallery-element"
+            <div class="col-12 col-xl-6 g-2"><img class="gallery-element bootstrap-override"
                     src="https://images.unsplash.com/photo-1672835423473-a70011cf49de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="An image of a well-stocked and picturesque bar." title="An image of a well-stocked and picturesque bar."></div>
-            <div class="col-12 col-xl-6 g-2"><img class="gallery-element"
+            <div class="col-12 col-xl-6 g-2"><img class="gallery-element bootstrap-override"
                     src="https://images.unsplash.com/photo-1508253730651-e5ace80a7025?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="An image of well-stocked bar shevles, bottles filling the screen."  title="An image of well-stocked bar shevles, bottles filling the screen."></div>
-            <div class="col-12 col-xl-6 g-2"><img class="gallery-element"
+            <div class="col-12 col-xl-6 g-2"><img class="gallery-element bootstrap-override"
                     src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="A close-up shot of a well-made cocktail, with a dark backround and sprigs of rosemary." title="A close-up shot of a well-made cocktail, with a dark backround and sprigs of rosemary."></div>
-            <div class="col-12 col-xl-6 g-2"><img class="gallery-element"
+            <div class="col-12 col-xl-6 g-2"><img class="gallery-element bootstrap-override"
                     src="https://images.unsplash.com/photo-1502819126416-d387f86d47a1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="A very aesthetic view of a well-stocked bar, with white tiles across the back-splash." title="A very aesthetic view of a well-stocked bar, with white tiles across the back-splash."></div>
-            <div class="col-12 col-xl-6 g-2"><img class="gallery-element"
+            <div class="col-12 col-xl-6 g-2"><img class="gallery-element bootstrap-override"
                     src="https://images.unsplash.com/photo-1509669803555-fd5edd8d5a41?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Close-up shot of a mixologist pouring a frothy pink cocktail into a coup glass."  title="Close-up shot of a mixologist pouring a frothy pink cocktail into a coup glass."></div>
-            <div class="col-12 col-xl-6 g-2"><img class="gallery-element"
+            <div class="col-12 col-xl-6 g-2"><img class="gallery-element bootstrap-override"
                     src="https://images.unsplash.com/photo-1515568514401-f2692d6781f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="An aesthetic close-up shot with soft focus, of glasses hanging in a vertical rack." title="An aesthetic close-up shot with soft focus, of glasses hanging in a vertical rack."></div>
-            <div class="col-12 col-xl-6 g-2"><img class="gallery-element"
+            <div class="col-12 col-xl-6 g-2"><img class="gallery-element bootstrap-override"
                     src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=2157&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="A mid-shot of an orange, yellow and red cocktails, all in short tumblers with lots of decoration." title="A mid-shot of an orange, yellow and red cocktails, all in short tumblers with lots of decoration."></div>
-            <div class="col-12 col-xl-6 g-2"><img class="gallery-element"
+            <div class="col-12 col-xl-6 g-2"><img class="gallery-element bootstrap-override"
                     src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="A shot of a bar, with highly polished surfaces and a dark and woody aesthetic theme." title="A shot of a bar, with highly polished surfaces and a dark and woody aesthetic theme."></div>
-            <div class="col-12 col-xl-6 g-2"><img class="gallery-element"
+            <div class="col-12 col-xl-6 g-2"><img class="gallery-element bootstrap-override"
                     src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="A close-up of a pint being pulled, with soft focus and lots of detail on the spout." title="A close-up of a pint being pulled, with soft focus and lots of detail on the spout."></div>
-            <div class="col-12 col-xl-6 g-2"><img class="gallery-element"
+            <div class="col-12 col-xl-6 g-2"><img class="gallery-element bootstrap-override"
                     src="https://images.unsplash.com/photo-1698653223783-b936ed7ce22c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="A distant shot of a bar, with mirrored backsplash and well-stocked shelves." title="A distant shot of a bar, with mirrored backsplash and well-stocked shelves."></div>
         </div>

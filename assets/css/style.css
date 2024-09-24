@@ -8,20 +8,16 @@ body {
     text-align: center;
 }
 
-img.gallery-element {
-  width: 100% !important;
-  height: 100% !important;
-}
-
 script{
     display: none;
 }
 
 /* Headings */
-h1{
-text-transform: uppercase;
-font-weight: bolder;
-font-size: 1.3em;
+h1 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 250%;
+  letter-spacing: 2px;
 }
 h2{
     text-transform: uppercase;
@@ -46,13 +42,6 @@ header {
     z-index: 24000;
     box-shadow: 0px 5px 8px #1A1A29;
   }
-
-  h1 {
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 250%;
-    letter-spacing: 2px;
-}
 
 /* Navigation Bar */
   /* #navbar a{
@@ -97,22 +86,22 @@ footer {
     width: 100%;
 }
 
-#flex-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+#flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #242325;
 }
 
-#footer-logo{
-    display: inline-block;
-    width: 20%;
-    background-color: #242325;
-  }
+#footer-logo {
+  padding: 3%;
+}
 
-  #footer-logo img {
-    width: 10rem;
-    padding: 15%;
-    filter: invert();
+#footer-logo img {
+  width: 12rem;
+  filter: invert();
+  box-sizing: content-box;
 }
 
 #footer-logo img:hover {
@@ -122,19 +111,14 @@ footer {
 }
 
 #footer_social_links {
-  min-height: 10rem;
-  width: 45%;
-  background-color: #242325;
-  color: #fff;
-  padding: 2%;
+  padding: 2% 0;
 }
 
 #footer_social_links ul {
-  list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 0;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 #footer_social_links a {
@@ -178,17 +162,19 @@ i::before {
 }
 
 
-  #footer_menu a{
-    color: white;
-    text-transform: capitalize;
-    text-decoration: none;
-  }
+#footer_menu a {
+  color: #ffffff;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 120%;
+}
 
-  #footer_menu a:hover{
-    color: #037171;
-    text-transform: uppercase;
-    text-decoration: underline;
-  }
+#footer_menu a:hover {
+  color: #037171;
+  text-transform: uppercase;
+  text-decoration: underline;
+  transition: .75s;
+}
 
   #footer_menu li {
     list-style-type: none;
@@ -542,5 +528,3 @@ fieldset {
 }
 
 /* Profile */
-
-
