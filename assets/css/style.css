@@ -111,6 +111,12 @@ footer {
     filter: invert();
 }
 
+#footer-logo img:hover {
+  transform: rotateY(360deg);
+  transition: 3s;
+  cursor: crosshair;
+}
+
 #footer_social_links {
   min-height: 10rem;
   width: 45%;
@@ -235,19 +241,6 @@ div#footer_social_links li {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-div#footer_social_links li:after {
-  height: 2px;
-  width: 30%;
-  position: absolute;
-  display: block;
-  background-color: #037171;
-  content: '';
-  overflow: hidden;
-  left: 26%;
-  bottom: -121%;
-  z-index: 1;
-}
-
 #footer_contact a {
   color: #037171;
 }
@@ -340,7 +333,6 @@ div#intro-intro {
 .grid-container{
   display: inline-grid;
   gap: 1rem;
-  max-width: 50%;
   justify-content: space-evenly;
   grid-template-columns: 300px 300px;
   margin: 1rem auto 2rem;
@@ -354,6 +346,7 @@ div#intro-intro {
 .grid-item:hover {
   background-color: #DAA520;
   border: 1px solid #fff;
+  transition: 1.5s;
 }
 
 .grid-item img{
@@ -450,20 +443,17 @@ progress#majority::-webkit-progress-value {
 /* Buttons */
 
 .menu-btn {
-    border: none;
-    font-size: inherit;
-    color: white !important;
-    background-color: #037171;
-    cursor: pointer;
-    padding: 20px 50px;
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    position: relative;
-    text-decoration: none;
-    border-radius: 8px;
-  }
+  border: 3px groove #000000;
+  font-size: inherit;
+  color: #ffffff;
+  background-color: #037171;
+  cursor: pointer;
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 10px;
+}
 
   .menu-btn a {
     vertical-align: middle;
@@ -472,9 +462,9 @@ progress#majority::-webkit-progress-value {
   } 
 
 img.menu-icon {
-    padding: 0 10px;
+    padding: 0 5px;
     vertical-align: middle;
-    filter: invert()
+    filter: invert(1)
 }
 
 @keyframes color-change{
@@ -490,8 +480,11 @@ img.menu-icon {
     animation-iteration-count: infinite;
   }
 
-#navbar{
+  #navbar {
     margin-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 /* Contact Form */
 
@@ -517,16 +510,24 @@ img.menu-icon {
         font-style: italic;
 }
 
-#contact-form button{
-  color: white !important;
+#contact-form button {
+  color: #ffffff;
   cursor: pointer;
-  padding: 15px 50px;
-  display: inline-block;
+  padding: 20px 50px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
-  position: relative;
   text-decoration: none;
-  border-radius: 2px;
-  margin-top: 8px;
+  border-radius: 4px;
+  margin-top: 10px;
+  background-color: #037171;
+  font-size: 125%;
 }
+
+fieldset {
+  margin-bottom: 2rem;
+}
+
+/* Profile */
+
+
