@@ -105,8 +105,8 @@ footer {
 }
 
 #footer-logo img:hover {
-  transform: rotateY(360deg);
-  transition: 3s;
+  transform: rotateY(2160deg);
+  transition: 4s;
   cursor: crosshair;
 }
 
