@@ -42,12 +42,16 @@ header {
     background-color: #242325;
     color: white;
     text-align: center;
-    min-height: 12rem;
+    min-height: 10rem;
     z-index: 24000;
+    box-shadow: 0px 5px 8px #1A1A29;
   }
 
-header h1{
-margin-bottom :2rem;
+  h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 250%;
+    letter-spacing: 2px;
 }
 
 /* Navigation Bar */
@@ -287,7 +291,6 @@ section#intro-intro .containter{
   justify-content: center; 
   text-align: center; 
   width: 100%; 
-  padding-right: 20px;
 }
 
 div#intro-intro {
