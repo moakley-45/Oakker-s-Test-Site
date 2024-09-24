@@ -493,7 +493,7 @@ img.menu-icon {
     text-transform: uppercase;
     display: inline-grid;
     width: 38rem;
-    margin-bottom: 2rem;
+    margin-block-end: 5px;
 }
 
 #contact-form ul li{
@@ -508,6 +508,16 @@ img.menu-icon {
         text-transform: initial;
         font-weight: 300;
         font-style: italic;
+}
+
+input#name, input#mail, textarea#msg {
+  background-color: #ffffff00;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+textarea {
+  height: 5rem;
 }
 
 #contact-form button {
